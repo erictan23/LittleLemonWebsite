@@ -7,16 +7,14 @@ body {
     margin-left:5%;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom:0.25rem;
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color:aliceblue
 }
 
-h3{
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.25rem;
+h2 {
+    font-size: 2rem;
 }
 
 header > img {
@@ -52,41 +50,19 @@ nav li {
     font-display: center;
     margin-right: 5rem;
     margin-left:5rem;
+    flex-wrap:wrap;
+    justify-content: space-between;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
-
-main li {
-    list-style: none;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+main {
+    background-image: url(chad-montano-MqT0asuoIcU-unsplash.jpg);
 }
-
-ul ul {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-ul > h2 {
-font-weight: bold;
-text-transform: uppercase;
-border-bottom: 2px solid #ccc;
-padding-bottom: 0.5em;
-}
-
 
 
 
 footer {
     display: flex;
-    margin-top: 80px
+    margin-top: 20px
 }
 
 footer > div {
@@ -96,6 +72,13 @@ footer > div {
     margin-right: 3rem;
 }
 
-.price {
-    float: right;
-}
+@media screen and (max-width: 768px) {
+   
+    section {
+      flex-direction: column;
+    }
+  
+    article {
+      width: 100%;
+    }
+  }
